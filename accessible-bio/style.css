@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway';
+    background-color: gray;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 58px;
+    text-shadow: 2px 2px 4px black;
+}
+
+h2 {
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.name {
+    color: orangered;
+}
+
+.header {
+    /* background-color: #00688B; */
+    background-image: url('img/bkg-image.jpg');
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin: 0;
+    height: 500px;
+    border-bottom: 1px solid orangered;
+}
+
+.header .container {
+    margin-top: 100px;
+}
+
+.header .container .welcome {
+    /* font-size: 58px; */
+    margin: 40px 100px;
+    color: white;
+}
+
+.about {
+    padding: 40px 0;
+    margin: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid orangered;
+}
+
+.about li {
+    padding: 8px 0;
+}
+
+.psun-img {
+    width: 450px;
+}
+
+.about .access-li li {
+    margin-left: -40px;
+}
+
+.google-img {
+    width: 350px;
+}
+
+.about .access-li {
+    list-style-type: none;
+}
+
+.about .grid-item {
+    padding: 20px;
+}
+
+.contact {
+    background-color: #000748;
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    margin: 0;
+}
+
+.footer {
+    background-color: #2b2b2b;
+    display: flex;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    margin: 0 20%;
+}
+
+.me-img {
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 150px;
+    margin-left: 80px;
+}
+
+.img {
+    border-radius: 10px;
+}
+
+.link-anim {
+    text-decoration: none;
+    color: orangered;
+    display: inline-block;
+    position: relative;
+}
+
+.link-anim:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link-anim:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.grid-wrapper-1 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 60%;
+}
+
+.grid-wrapper-2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.contact {
+    justify-content: center;
+}
+
+.contact form {
+    width: 500px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 40%;
+    background-color: orangered;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(171, 46, 0);
+}
